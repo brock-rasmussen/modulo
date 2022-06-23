@@ -1,0 +1,127 @@
+{%- liquid
+	assign body_font_bold_weight = settings.type_body_font.weight | plus: 300 | at_most: 1000
+
+	assign body_font_bold = settings.type_body_font | font_modify: 'weight', body_font_bold_weight
+	assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
+	assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
+-%}
+
+{% style %}
+	{{ settings.type_body_font | font_face: font_display: 'swap' }}
+	{{ body_font_bold | font_face: font_display: 'swap' }}
+	{{ body_font_italic | font_face: font_display: 'swap' }}
+	{{ body_font_bold_italic | font_face: font_display: 'swap' }}
+	{{ settings.type_header_font | font_face: font_display: 'swap' }}
+
+	:root {
+		--font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
+		--font-body-style: {{ settings.type_body_font.style }};
+		--font-body-weight: {{ settings.type_body_font.weight }};
+		--font-body-weight-bold: {{ body_font_bold_weight }};
+
+		--font-heading-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
+		--font-heading-style: {{ settings.type_header_font.style }};
+		--font-heading-weight: {{ settings.type_header_font.weight }};
+
+		--color-primary-foreground: {{ settings.colors_primary_foreground.red }}, {{ settings.colors_primary_foreground.green }}, {{ settings.colors_primary_foreground.blue }};
+		--color-primary-accent: {{ settings.colors_primary_accent.red }}, {{ settings.colors_primary_accent.green }}, {{ settings.colors_primary_accent.blue }};
+		--color-primary-1: {{ settings.colors_primary_1.red }}, {{ settings.colors_primary_1.green }}, {{ settings.colors_primary_1.blue }};
+		--color-primary-2: {{ settings.colors_primary_2.red }}, {{ settings.colors_primary_2.green }}, {{ settings.colors_primary_2.blue }};
+
+		--color-secondary-foreground: {{ settings.colors_secondary_foreground.red }}, {{ settings.colors_secondary_foreground.green }}, {{ settings.colors_secondary_foreground.blue }};
+		--color-secondary-accent: {{ settings.colors_secondary_accent.red }}, {{ settings.colors_secondary_accent.green }}, {{ settings.colors_secondary_accent.blue }};
+		--color-secondary-1: {{ settings.colors_secondary_1.red }}, {{ settings.colors_secondary_1.green }}, {{ settings.colors_secondary_1.blue }};
+		--color-secondary-2: {{ settings.colors_secondary_2.red }}, {{ settings.colors_secondary_2.green }}, {{ settings.colors_secondary_2.blue }};
+
+		--media-border-opacity: {{ settings.media_border_opacity | divided_by: 100.0 }};
+		--media-border-width: {{ settings.media_border_thickness }}px;
+		--media-corner-radius: {{ settings.media_radius }}px;
+		--media-shadow-opacity: {{ settings.media_shadow_opacity | divided_by: 100.0 }};
+		--media-shadow-horizontal-offset: {{ settings.media_shadow_horizontal_offset }}px;
+		--media-shadow-vertical-offset: {{ settings.media_shadow_vertical_offset }}px;
+		--media-shadow-blur-radius: {{ settings.media_shadow_blur }}px;
+		--media-shadow-visible: {% if settings.media_shadow_opacity > 0 %}1{% else %}0{% endif %};
+
+		--card-border-width: {{ settings.card_border_thickness }}px;
+		--card-border-opacity: {{ settings.card_border_opacity | divided_by: 100.0 }};
+		--card-corner-radius: {{ settings.card_radius }}px;
+		--card-shadow-opacity: {{ settings.card_shadow_opacity | divided_by: 100.0 }};
+		--card-shadow-horizontal-offset: {{ settings.card_shadow_horizontal_offset }}px;
+		--card-shadow-vertical-offset: {{ settings.card_shadow_vertical_offset }}px;
+		--card-shadow-blur-radius: {{ settings.card_shadow_blur }}px;
+		--card-shadow-visible: {% if settings.card_shadow_opacity > 0 %}1{% else %}0{% endif %};
+
+		--badge-corner-radius: {{ settings.badge_radius | divided_by: 16.0 }}rem;
+
+		--popup-border-width: {{ settings.popup_border_thickness }}px;
+		--popup-border-opacity: {{ settings.popup_border_opacity | divided_by: 100.0 }};
+		--popup-corner-radius: {{ settings.popup_radius }}px;
+		--popup-shadow-opacity: {{ settings.popup_shadow_opacity | divided_by: 100.0 }};
+		--popup-shadow-horizontal-offset: {{ settings.popup_shadow_horizontal_offset }}px;
+		--popup-shadow-vertical-offset: {{ settings.popup_shadow_vertical_offset }}px;
+		--popup-shadow-blur-radius: {{ settings.popup_shadow_blur }}px;
+
+		--drawer-border-width: {{ settings.drawer_border_thickness }}px;
+		--drawer-border-opacity: {{ settings.drawer_border_opacity | divided_by: 100.0 }};
+		--drawer-shadow-opacity: {{ settings.drawer_shadow_opacity | divided_by: 100.0 }};
+		--drawer-shadow-horizontal-offset: {{ settings.drawer_shadow_horizontal_offset }}px;
+		--drawer-shadow-vertical-offset: {{ settings.drawer_shadow_vertical_offset }}px;
+		--drawer-shadow-blur-radius: {{ settings.drawer_shadow_blur }}px;
+
+		--text-box-border-width: {{ settings.text_box_border_width }}px;
+		--text-box-border-opacity: {{ settings.text_box_border_opacity | divided_by: 100.0 }};
+		--text-box-corner-radius: {{ settings.text_box_radius }}px;
+		--text-box-shadow-opacity: {{ settings.text_box_shadow_opacity | divided_by: 100.0 }};
+		--text-box-shadow-horizontal-offset: {{ settings.text_box_shadow_horizontal_offset }}px;
+		--text-box-shadow-vertical-offset: {{ settings.text_box_shadow_vertical_offset }}px;
+		--text-box-shadow-blur-radius: {{ settings.text_box_shadow_blur }}px;
+		--text-box-shadow-visible: {% if settings.text_box_shadow_opacity > 0 %}1{% else %}0{% endif %};
+
+		--button-border-width: {{ settings.button_border_width }}px;
+		--button-border-opacity: {{ settings.button_border_opacity | divided_by: 100.0 }};
+		--button-corner-radius: {{ settings.button_radius }}px;
+		--button-shadow-opacity: {{ settings.button_shadow_opacity | divided_by: 100.0 }};
+		--button-shadow-horizontal-offset: {{ settings.button_shadow_horizontal_offset }}px;
+		--button-shadow-vertical-offset: {{ settings.button_shadow_vertical_offset }}px;
+		--button-shadow-blur-radius: {{ settings.button_shadow_blur }}px;
+		--button-shadow-visible: {% if settings.button_shadow_opacity > 0 %}1{% else %}0{% endif %};
+
+		--input-border-width: {{ settings.input_border_thickness }}px;
+		--input-border-opacity: {{ settings.input_border_opacity | divided_by: 100.0 }};
+		--input-corner-radius: {{ settings.input_radius }}px;
+		--input-shadow-opacity: {{ settings.input_shadow_opacity | divided_by: 100.0 }};
+		--input-shadow-horizontal-offset: {{ settings.input_shadow_horizontal_offset }}px;
+		--input-shadow-vertical-offset: {{ settings.input_shadow_vertical_offset }}px;
+		--input-shadow-blur-radius: {{ settings.input_shadow_blur }}px;
+
+		--variant-pill-border-width: {{ settings.variant_pill_border_width }}px;
+		--variant-pill-border-opacity: {{ settings.variant_pill_border_opacity | divided_by: 100.0 }};
+		--variant-pill-corner-radius: {{ settings.variant_pill_radius }}px;
+		--variant-pill-shadow-opacity: {{ settings.variant_pill_shadow_opacity | divided_by: 100.0 }};
+		--variant-pill-shadow-horizontal-offset: {{ settings.variant_pill_shadow_horizontal_offset }}px;
+		--variant-pill-shadow-vertical-offset: {{ settings.variant_pill_shadow_vertical_offset }}px;
+		--variant-pill-shadow-blur-radius: {{ settings.variant_pill_shadow_blur }}px
+	}
+
+	*,
+	*::before,
+	*::after {
+		box-sizing: inherit;
+	}
+
+	html {
+		box-sizing: border-box;
+		height: 100%;
+	}
+
+	body {
+		display: grid;
+		grid-template-rows: auto auto 1fr auto;
+		grid-template-columns: 100%;
+		min-height: 100%;
+		margin: 0;
+		font-family: var(--font-body-family);
+		font-style: var(--font-body-style);
+		font-weight: var(--font-body-weight);
+	}
+{% endstyle %}

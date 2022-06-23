@@ -1,0 +1,6 @@
+MatchingTranslations:
+  enabled: false
+SchemaJsonFormat:
+  indent: ' '
+TemplateLength:
+  enabled: false

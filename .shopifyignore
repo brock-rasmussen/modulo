@@ -1,0 +1,8 @@
+_src/
+.vscode
+.gitignore
+.shopifyignore
+.theme-check.yml
+package-lock.json
+package.json
+tailwind.config.js

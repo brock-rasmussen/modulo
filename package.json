@@ -1,0 +1,23 @@
+{
+  "name": "shopify-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "shopify theme check --auto-correct",
+    "serve": "shopify switch --store brock-rasmussen && shopify theme serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brock-rasmussen/shopify-theme.git"
+  },
+  "author": "Brock Rasmussen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brock-rasmussen/shopify-theme/issues"
+  },
+  "homepage": "https://github.com/brock-rasmussen/shopify-theme#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}

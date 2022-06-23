@@ -1,0 +1,118 @@
+{
+	"sections": {
+		"main": {
+			"type": "main-product",
+			"settings": {
+				"enable_sticky_info": true,
+				"gallery_layout": "stacked",
+				"mobile_thumbnails": "hide"
+			},
+			"blocks": {
+				"vendor": {
+					"type": "text",
+					"settings": {
+						"text": "{{ product.vendor }}",
+						"text_style": "caption"
+					}
+				},
+				"title": {
+					"type": "title"
+				},
+				"subtitle": {
+					"type": "text",
+					"settings": {
+						"text": "{{ product.metafields.descriptors.subtitle.value }}",
+						"text_style": "subtitle"
+					}
+				},
+				"price": {
+					"type": "price"
+				},
+				"variant_selector": {
+					"type": "variant_selector"
+				},
+				"quantity_selector": {
+					"type": "quantity_selector"
+				},
+				"buy_buttons": {
+					"type": "buy_buttons"
+				},
+				"description": {
+					"type": "description"
+				},
+				"share": {
+					"type": "share",
+					"settings": {
+						"share_label": "Share"
+					}
+				}
+			},
+			"block_order": [
+				"vendor",
+				"title",
+				"subtitle",
+				"price",
+				"variant_selector",
+				"quantity_selector",
+				"buy_buttons",
+				"description",
+				"share"
+			]
+		},
+		"collapsibles": {
+			"type": "collapsibles",
+			"settings": {
+				"mobile_layout": "accordion",
+				"desktop_layout": "tabs"
+			},
+			"blocks": {
+				"collapsible-0": {
+					"type": "collapsible",
+					"settings": {
+						"heading": "Materials",
+						"icon": "leather",
+						"content": "",
+						"page": ""
+					}
+				},
+				"collapsible-1": {
+					"type": "collapsible",
+					"settings": {
+						"heading": "Shipping & Returns",
+						"icon": "truck",
+						"content": "",
+						"page": ""
+					}
+				},
+				"collapsible-2": {
+					"type": "collapsible",
+					"settings": {
+						"heading": "Dimensions",
+						"icon": "ruler",
+						"content": "",
+						"page": ""
+					}
+				},
+				"collapsible-3": {
+					"type": "collapsible",
+					"settings": {
+						"heading": "Care Instructions",
+						"icon": "heart",
+						"content": "",
+						"page": ""
+					}
+				}
+			},
+			"block_order": [
+				"collapsible-0",
+				"collapsible-1",
+				"collapsible-2",
+				"collapsible-3"
+			]
+		}
+	},
+	"order": [
+		"main",
+		"collapsibles"
+	]
+}

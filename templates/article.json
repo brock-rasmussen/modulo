@@ -1,0 +1,41 @@
+{
+	"sections": {
+		"main": {
+			"type": "main-article",
+			"blocks": {
+				"blog_link_1": {
+					"type": "blog_link"
+				},
+				"title": {
+					"type": "title"
+				},
+				"featured_image": {
+					"type": "featured_image",
+					"settings": {
+						"width": "wide"
+					}
+				},
+				"content": {
+					"type": "content"
+				},
+				"share": {
+					"type": "share"
+				},
+				"blog_link_2": {
+					"type": "blog_link"
+				}
+			}
+		},
+		"block_order": [
+			"blog_link_1",
+			"title",
+			"featured_image",
+			"share",
+			"content",
+			"blog_link_2"
+		]
+	},
+	"order": [
+		"main"
+	]
+}
