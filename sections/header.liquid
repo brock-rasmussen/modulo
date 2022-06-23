@@ -4,125 +4,125 @@
 
 {% schema %}
 {
-	"name": "Header",
-	"settings": [
-		{
-			"type": "select",
-			"id": "color_scheme",
-			"options": [
-				{
-					"value": "primary-1",
-					"label": "Primary 1"
-				},
-				{
-					"value": "primary-2",
-					"label": "Primary 2"
-				},
-				{
-					"value": "secondary-1",
-					"label": "Secondary 1"
-				},
-				{
-					"value": "secondary-1",
-					"label": "Secondary 1"
-				},
-				{
-					"value": "inverse",
-					"label": "Inverse"
-				}
-			],
-			"default": "secondary-1",
-			"label": "Color scheme"
-		},
-		{
-			"type": "image_picker",
-			"id": "logo",
-			"label": "Logo image"
-		},
-		{
-			"type": "range",
-			"id": "logo_width",
-			"min": 50,
-			"max": 250,
-			"step": 10,
-			"default": 100,
-			"unit": "px",
-			"label": "Logo width"
-		},
-		{
-			"type": "link_list",
-			"id": "menu",
-			"default": "main-menu",
-			"label": "Menu"
-		},
-		{
-			"type": "select",
-			"id": "desktop_menu_alignment",
-			"options": [
-				{
-					"value": "left",
-					"label": "Left"
-				},
-				{
-					"value": "center",
-					"label": "Center"
-				},
-				{
-					"value": "right",
-					"label": "Right"
-				}
-			],
-			"default": "left",
-			"label": "Desktop menu alignment"
-		},
-		{
-			"type": "select",
-			"id": "desktop_menu_type",
-			"options": [
-				{
-					"value": "dropdown",
-					"label": "Dropdown"
-				},
-				{
-					"value": "mega_menu",
-					"label": "Mega menu"
-				}
-			],
-			"default": "mega_menu",
-			"label": "Desktop menu type",
-			"info": "Menu type is automatically optimized for mobile."
-		},
-		{
-			"type": "checkbox",
-			"id": "enable_sticky_header",
-			"default": true,
-			"label": "Enable sticky header",
-			"info": "Header shows on the screen as customers scroll up."
-		},
-		{
-			"type": "header",
-			"content": "Section padding"
-		},
-		{
-			"type": "range",
-			"id": "padding_top",
-			"min": 0,
-			"max": 36,
-			"step": 4,
-			"unit": "px",
-			"label": "Top padding",
-			"default": 20
-		},
-		{
-			"type": "range",
-			"id": "padding_bottom",
-			"min": 0,
-			"max": 36,
-			"step": 4,
-			"unit": "px",
-			"label": "Bottom padding",
-			"default": 20
-		}
-	]
+ "name": "Header",
+ "settings": [
+  {
+   "type": "select",
+   "id": "color_scheme",
+   "options": [
+    {
+     "value": "primary-1",
+     "label": "Primary 1"
+    },
+    {
+     "value": "primary-2",
+     "label": "Primary 2"
+    },
+    {
+     "value": "secondary-1",
+     "label": "Secondary 1"
+    },
+    {
+     "value": "secondary-1",
+     "label": "Secondary 1"
+    },
+    {
+     "value": "inverse",
+     "label": "Inverse"
+    }
+   ],
+   "default": "secondary-1",
+   "label": "Color scheme"
+  },
+  {
+   "type": "image_picker",
+   "id": "logo",
+   "label": "Logo image"
+  },
+  {
+   "type": "range",
+   "id": "logo_width",
+   "min": 50,
+   "max": 250,
+   "step": 10,
+   "default": 100,
+   "unit": "px",
+   "label": "Logo width"
+  },
+  {
+   "type": "link_list",
+   "id": "menu",
+   "default": "main-menu",
+   "label": "Menu"
+  },
+  {
+   "type": "select",
+   "id": "desktop_menu_alignment",
+   "options": [
+    {
+     "value": "left",
+     "label": "Left"
+    },
+    {
+     "value": "center",
+     "label": "Center"
+    },
+    {
+     "value": "right",
+     "label": "Right"
+    }
+   ],
+   "default": "left",
+   "label": "Desktop menu alignment"
+  },
+  {
+   "type": "select",
+   "id": "desktop_menu_type",
+   "options": [
+    {
+     "value": "dropdown",
+     "label": "Dropdown"
+    },
+    {
+     "value": "mega_menu",
+     "label": "Mega menu"
+    }
+   ],
+   "default": "mega_menu",
+   "label": "Desktop menu type",
+   "info": "Menu type is automatically optimized for mobile."
+  },
+  {
+   "type": "checkbox",
+   "id": "enable_sticky_header",
+   "default": true,
+   "label": "Enable sticky header",
+   "info": "Header shows on the screen as customers scroll up."
+  },
+  {
+   "type": "header",
+   "content": "Section padding"
+  },
+  {
+   "type": "range",
+   "id": "padding_top",
+   "min": 0,
+   "max": 36,
+   "step": 4,
+   "unit": "px",
+   "label": "Top padding",
+   "default": 20
+  },
+  {
+   "type": "range",
+   "id": "padding_bottom",
+   "min": 0,
+   "max": 36,
+   "step": 4,
+   "unit": "px",
+   "label": "Bottom padding",
+   "default": 20
+  }
+ ]
 }
 {% endschema %}

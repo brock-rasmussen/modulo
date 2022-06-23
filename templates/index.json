@@ -1,50 +1,50 @@
 {
-	"sections": {
-		"image_banner": {
-			"type": "image-banner",
-			"settings": {
-				"image_overlay_opacity": 40,
-				"image_height": "large",
-				"color_scheme": "background-1",
-				"desktop_horizontal_alignment": "center",
-				"desktop_vertical_alignment": "end",
-				"desktop_show_container": false,
-				"desktop_text_alignment": "center",
-				"mobile_text_alignment": "center",
-				"mobile_stack": false
-			},
-			"blocks": {
-				"heading": {
-					"type": "heading",
-					"settings": {
-						"heading": "Image banner",
-						"heading_size": "h1"
-					}
-				},
-				"text": {
-					"type": "text",
-					"settings": {
-						"text": "<p>Give customers details about the banner images or content on the template.</p>",
-						"text_style": "body"
-					}
-				},
-				"buttons": {
-					"type": "buttons",
-					"settings": {
-						"button_label_1": "Shop all",
-						"button_link_1": "shopify://collections/all",
-						"button_style_1": "secondary",
-						"button_label_2": "",
-						"button_link_2": "",
-						"button_style_2": "secondary"
-					}
-				}
-			},
-			"block_order": [
-				"heading",
-				"text",
-				"button"
-			]
-		}
-	}
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "settings": {
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "color_scheme": "background-1",
+        "desktop_horizontal_alignment": "center",
+        "desktop_vertical_alignment": "end",
+        "desktop_show_container": false,
+        "desktop_text_alignment": "center",
+        "mobile_text_alignment": "center",
+        "mobile_stack": false
+      },
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Give customers details about the banner images or content on the template.</p>",
+            "text_style": "body"
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify://collections/all",
+            "button_style_1": "secondary",
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_2": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ]
+    }
+  }
 }

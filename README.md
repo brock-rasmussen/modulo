@@ -1,4 +1,4 @@
-# Modulo
+# Modulo - Shopify Theme
 
 [![Build status](https://github.com/brock-rasmussen/modulo/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/brock-rasmussen/modulo/actions/workflows/ci.yml?query=branch%3Amain)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?color=informational)](/.github/CONTRIBUTING.md)

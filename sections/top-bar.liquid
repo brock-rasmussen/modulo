@@ -4,101 +4,101 @@
 
 {% schema %}
 {
-	"name": "Top bar",
-	"settings": [
-		{
-			"type": "select",
-			"id": "color_scheme",
-			"options": [
-				{
-					"value": "primary-1",
-					"label": "Primary 1"
-				},
-				{
-					"value": "primary-2",
-					"label": "Primary 2"
-				},
-				{
-					"value": "secondary-1",
-					"label": "Secondary 1"
-				},
-				{
-					"value": "secondary-1",
-					"label": "Secondary 1"
-				},
-				{
-					"value": "inverse",
-					"label": "Inverse"
-				}
-			],
-			"default": "secondary-1",
-			"label": "Color scheme"
-		},
-		{
-			"type": "header",
-			"content": "Country/region selector",
-			"info": "To add a country/region, go to your [payment settings.](https://brock-rasmussen.myshopify.com/admin/settings/payments)"
-		},
-		{
-			"type": "checkbox",
-			"id": "enable_country_selector",
-			"default": true,
-			"label": "Enable country/region selector"
-		},
-		{
-			"type": "header",
-			"content": "Language selector",
-			"default": true
-		},
-		{
-			"type": "checkbox",
-			"id": "enable_language_selector",
-			"default": true,
-			"label": "Enable language selector"
-		},
-		{
-			"type": "header",
-			"content": "Announcement"
-		},
-		{
-			"type": "text",
-			"id": "announcement_text",
-			"label": "Text"
-		},
-		{
-			"type": "url",
-			"id": "announcement_link_url",
-			"label": "Link"
-		},
-		{
-			"type": "text",
-			"id": "announcement_link_text",
-			"label": "Link text"
-		},
-		{
-			"type": "header",
-			"content": "Section padding"
-		},
-		{
-			"type": "range",
-			"id": "padding_top",
-			"min": 0,
-			"max": 36,
-			"step": 4,
-			"unit": "px",
-			"label": "Top padding",
-			"default": 20
-		},
-		{
-			"type": "range",
-			"id": "padding_bottom",
-			"min": 0,
-			"max": 36,
-			"step": 4,
-			"unit": "px",
-			"label": "Bottom padding",
-			"default": 20
-		}
-	]
+ "name": "Top bar",
+ "settings": [
+  {
+   "type": "select",
+   "id": "color_scheme",
+   "options": [
+    {
+     "value": "primary-1",
+     "label": "Primary 1"
+    },
+    {
+     "value": "primary-2",
+     "label": "Primary 2"
+    },
+    {
+     "value": "secondary-1",
+     "label": "Secondary 1"
+    },
+    {
+     "value": "secondary-1",
+     "label": "Secondary 1"
+    },
+    {
+     "value": "inverse",
+     "label": "Inverse"
+    }
+   ],
+   "default": "secondary-1",
+   "label": "Color scheme"
+  },
+  {
+   "type": "header",
+   "content": "Country/region selector",
+   "info": "To add a country/region, go to your [payment settings.](https://brock-rasmussen.myshopify.com/admin/settings/payments)"
+  },
+  {
+   "type": "checkbox",
+   "id": "enable_country_selector",
+   "default": true,
+   "label": "Enable country/region selector"
+  },
+  {
+   "type": "header",
+   "content": "Language selector",
+   "default": true
+  },
+  {
+   "type": "checkbox",
+   "id": "enable_language_selector",
+   "default": true,
+   "label": "Enable language selector"
+  },
+  {
+   "type": "header",
+   "content": "Announcement"
+  },
+  {
+   "type": "text",
+   "id": "announcement_text",
+   "label": "Text"
+  },
+  {
+   "type": "url",
+   "id": "announcement_link_url",
+   "label": "Link"
+  },
+  {
+   "type": "text",
+   "id": "announcement_link_text",
+   "label": "Link text"
+  },
+  {
+   "type": "header",
+   "content": "Section padding"
+  },
+  {
+   "type": "range",
+   "id": "padding_top",
+   "min": 0,
+   "max": 36,
+   "step": 4,
+   "unit": "px",
+   "label": "Top padding",
+   "default": 20
+  },
+  {
+   "type": "range",
+   "id": "padding_bottom",
+   "min": 0,
+   "max": 36,
+   "step": 4,
+   "unit": "px",
+   "label": "Bottom padding",
+   "default": 20
+  }
+ ]
 }
 {% endschema %}

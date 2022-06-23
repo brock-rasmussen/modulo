@@ -1,52 +1,52 @@
 {
-	"sections": {
-		"banner": {
-			"type": "image-with-text",
-			"settings": {
-				"image": "{{ collection.image }}",
-				"height": "adapt",
-				"desktop_image_width": "medium",
-				"layout": "image_first",
-				"content_alignment": "top",
-				"desktop_text_alignment": "left",
-				"content_layout": "no-overlap",
-				"color_scheme": "background-1",
-				"mobile_text_alignment": "left"
-			},
-			"blocks": {
-				"title": {
-					"type": "header",
-					"settings": {
-						"heading": "{{ collection.title }}",
-						"heading_size": "h1"
-					}
-				},
-				"description": {
-					"type": "text",
-					"settings": {
-						"text": "{{ collection.description }}",
-						"text_style": "body"
-					}
-				}
-			},
-			"block_order": [
-				"title",
-				"description"
-			]
-		},
-		"main": {
-			"type": "main-collection",
-			"settings": {
-				"rows_per_page": 4,
-				"desktop_columns": 4,
-				"enable_filtering": true,
-				"enable_sorting": true,
-				"mobile_columns": "2"
-			}
-		}
-	},
-	"order": [
-		"banner",
-		"main"
-	]
+  "sections": {
+    "banner": {
+      "type": "image-with-text",
+      "settings": {
+        "image": "{{ collection.image }}",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "content_alignment": "top",
+        "desktop_text_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_text_alignment": "left"
+      },
+      "blocks": {
+        "title": {
+          "type": "header",
+          "settings": {
+            "heading": "{{ collection.title }}",
+            "heading_size": "h1"
+          }
+        },
+        "description": {
+          "type": "text",
+          "settings": {
+            "text": "{{ collection.description }}",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "description"
+      ]
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "rows_per_page": 4,
+        "desktop_columns": 4,
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "mobile_columns": "2"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "main"
+  ]
 }

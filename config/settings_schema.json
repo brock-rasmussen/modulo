@@ -4,8 +4,8 @@
 		"theme_name": "Modulo",
 		"theme_version": "1.0.0",
 		"theme_author": "Brock Rasmussen",
-		"theme_documentation_url": "https://github.com/brock-rasmussen/shopify-theme",
-		"theme_support_url": "https://github.com/brock-rasmussen/shopify-theme"
+		"theme_documentation_url": "https://github.com/brock-rasmussen/modulo",
+		"theme_support_url": "https://github.com/brock-rasmussen/modulo"
 	},
 	{
 		"name": "Colors",
@@ -893,7 +893,7 @@
 				"label": "Enable back to top link"
 			}
 		]
-	}
+	},
 	{
 		"name": "Search behavior",
 		"settings": [

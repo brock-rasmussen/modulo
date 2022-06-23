@@ -1,14 +1,14 @@
 {
-	"sections": {
-		"main": {
-			"type": "main-list-collections",
-			"settings": {
-				"title": "Collections",
-				"sort": "alphabetical"
-			}
-		}
-	},
-	"order": [
-		"main"
-	]
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "settings": {
+        "title": "Collections",
+        "sort": "alphabetical"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
 }

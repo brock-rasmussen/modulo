@@ -1,10 +1,35 @@
 {
-	"accessibility": {
-		"refresh_page": "Choosing a selection results in a full page refresh.",
-		"skip_to_text": "Skip to content",
-		"link_messages": {
-			"new_window": "Opens in a new window.",
-			"external": "Opens external website."
-		}
-	}
+  "accessibility": {
+    "refresh_page": "Choosing a selection results in a full page refresh.",
+    "skip_to_text": "Skip to content",
+    "link_messages": {
+      "new_window": "Opens in a new window.",
+      "external": "Opens external website."
+    }
+  },
+  "sections": {
+    "cart": {
+      "cart_error": "TODO",
+      "cart_quantity_error_html": "TODO"
+    },
+    "slideshow": {
+      "pause_slideshow": "TODO",
+      "play_slideshow": "TODO"
+    }
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "TODO",
+      "sold_out": "TODO",
+      "unavailable": "TODO",
+      "media": {
+        "image_available": "TODO"
+      }
+    }
+  },
+  "general": {
+    "share": {
+      "success_message": "TODO"
+    }
+  }
 }
